@@ -19,7 +19,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 .main-bg {
-  background-image: url(../img/Main-bg.svg);
+  background-image: url("../img/Main-bg.svg");
   background-position: center center;
   background-size: cover;
   color: #fff; }
@@ -31,12 +31,10 @@ font-family: 'Open Sans', sans-serif;
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0  3rem; }
+  padding: 10rem 3rem; }
 
 .section-height {
-  min-height: 100vh;
-  padding-top: 9rem;
-  padding-bottom: 9rem; }
+  min-height: 100vh; }
 
 .menu-spacing {
   height: 6.5rem; }
@@ -116,7 +114,9 @@ p {
 .menu-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .intro__content {
   position: relative;

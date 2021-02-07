@@ -4,7 +4,7 @@
   justify-content: center;
 }
 .main-bg{
-    background-image: url(../img/Main-bg.svg);
+    background-image: url('../img/Main-bg.svg');
     background-position:center center;
     background-size: cover;
     color: $white-color;
@@ -17,13 +17,12 @@
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0  3rem;
+    padding: 10rem $gap;
 }
 .section-height{
     min-height: 100vh;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
 }
 .menu-spacing{
   height: 6.5rem;
 }
+
