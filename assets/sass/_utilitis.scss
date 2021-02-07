@@ -1,0 +1,29 @@
+@mixin configflex-home {
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: center;
+}
+.main-bg{
+    background-image: url(../img/Main-bg.svg);
+    background-position:center center;
+    background-size: cover;
+    color: $white-color;
+}
+.white-bg{
+    background-color: $white-color;
+    color: $primary-color;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0  3rem;
+}
+.section-height{
+    min-height: 100vh;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.menu-spacing{
+  height: 6.5rem;
+}
