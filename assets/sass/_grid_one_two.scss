@@ -1,0 +1,52 @@
+.grid-one{
+  @include configflex;
+}
+
+.grid-one-content{
+  @include configflex; // define displey flex
+  h2{
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  p{
+    margin-bottom: 7rem;
+  }
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+  counter-reset: gridcounnter; // cria um contador
+  h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    &::before{
+     counter-increment: gridcounnter; // incrementa um unidade
+     content: counter(gridcounnter);
+     position: absolute;
+     top: -4rem;
+     left: -2rem;
+     font-size: 8rem;
+     font-style: italic;
+     transform: rotate(5deg);
+
+    }
+  }
+}
+.gallery-imagem{
+  width: 100%;
+  max-width:36rem;
+  max-height:36rem;
+  overflow: hidden;
+  img{
+    transition: all .3s ease-in-out;
+    &:hover{
+      transform: rotate(5deg) translate(-1rem, 1rem) scale(1.2);
+    }
+  }
+
+}

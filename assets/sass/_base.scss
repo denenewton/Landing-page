@@ -10,15 +10,11 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; //define 1rem correspondendo 10px
     scroll-behavior: smooth;
+  &.full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
 }
 body{
     font-size: 1.6rem;
 }
-
-
-
-
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/

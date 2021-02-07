@@ -1,0 +1,23 @@
+.intro__content{
+  @include configflex;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height:100vh;
+  max-width: 64rem;
+  text-align: center;
+  padding: 7rem 1rem;
+  h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+  }
+  p{
+    font-size: 2rem;
+    &:not(:last-child){
+      margin-bottom: 3rem;
+    }
+  }
+
+}
+
