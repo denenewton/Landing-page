@@ -38,6 +38,10 @@ body {
 .menu-spacing {
   height: 6.5rem; }
 
+div.full-width {
+  width: 100%;
+  flex: 1 1 100%; }
+
 html, body {
   font-family: 'Open Sans', sans-serif;
   color: #0A1128;
@@ -145,6 +149,48 @@ p {
       max-width: 100%;
       height: auto; }
 
+.contact-form {
+  grid-column: span 2; }
+
+.form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem; }
+  .form-grid legend {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 3rem; }
+
+.form-group {
+  flex: 1 1 32rem; }
+  .form-group label {
+    display: block;
+    margin-bottom: 2rem; }
+  .form-group input, .form-group textarea {
+    border: none;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    width: 100%; }
+    .form-group input::placeholder, .form-group textarea::placeholder {
+      color: rgba(10, 17, 40, 0.3); }
+  .form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 0.7rem 0.2rem rgba(220, 20, 60, 0.7); }
+  .form-group button {
+    border: 0.5rem solid #fff;
+    padding: 1.4rem;
+    background: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: all .3s ease-in-out; }
+    .form-group button:hover {
+      border: 0.5rem solid #fff;
+      background: #fff;
+      color: #0A1128;
+      transform: translateY(0.2rem); }
+
 .intro__content {
   display: flex;
   flex-flow: column wrap;
@@ -210,3 +256,27 @@ p {
     transition: all .3s ease-in-out; }
     .gallery-imagem img:hover {
       transform: rotate(5deg) translate(-1rem, 1rem) scale(1.2); }
+
+.responsive-table {
+  overflow: hidden;
+  overflow-x: auto; }
+
+table {
+  min-width: 35rem;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse; }
+  table caption {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1.6rem; }
+  table td, table th {
+    border: 0.05rem solid rgba(238, 238, 238, 0.7);
+    padding: .5rem;
+    text-align: left; }
+  table thead, table tfoot {
+    background: #eee; }
+  table tfoot td {
+    text-align: right;
+    font-style: italic; }

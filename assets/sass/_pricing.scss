@@ -1,0 +1,30 @@
+
+.responsive-table{
+ overflow: hidden;
+ overflow-x: auto;
+}
+table{
+  min-width: 35rem;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse:collapse;
+  caption{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1.6rem;
+  }
+  td,th{
+    //white-space: nowrap;
+    border: .05rem solid rgba($light-gray-color,.7);
+    padding: .5rem;
+    text-align: left;
+   }
+   thead, tfoot{
+     background: $light-gray-color;
+   }
+   tfoot td{
+     text-align: right;
+     font-style: italic;
+   }
+}

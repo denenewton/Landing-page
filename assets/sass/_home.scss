@@ -25,3 +25,53 @@
     }
   }
 }
+.contact-form{
+  grid-column: span 2;
+}
+.form-grid{
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gap;
+  legend{
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+  }
+}
+.form-group{
+  flex: 1 1 32rem;
+  label{
+    display: block;
+    margin-bottom: 2rem;
+  }
+  input,textarea{
+      border: none;
+      background-color: $white-color;
+      padding: 1.5rem 2rem;
+      font-size: 2rem;
+      width: 100%;
+      &::placeholder{
+        color: $light-gray-color-1;
+      }
+  }
+  input:focus,textarea:focus{
+    box-shadow: 0 0 .7rem .2rem rgba($secondary-color, $alpha: .7);
+  }
+
+  button{
+    border: .5rem solid $white-color;
+    padding: 1.4rem;
+    background: none;
+    color: $white-color;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+    &:hover{
+      border: .5rem solid $white-color;
+      background: $white-color;
+      color: $primary-color;
+      transform: translateY(.2rem);
+    }
+  }
+}
