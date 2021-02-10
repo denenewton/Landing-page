@@ -1,0 +1,18 @@
+.back-to-top{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  color: $primary-color;
+  transform: rotate(-90deg);
+  background: $white-color;
+  border-radius: 50%;
+  border: .1rem solid rgba($primary-color, $alpha: .7);
+  width: 5rem;
+  height: 5rem;
+
+
+}

@@ -25,6 +25,12 @@
     }
   }
 }
+@media (max-width: 800px){
+  section > div.home__content{
+       display: grid;
+       grid-template-columns: 1fr;
+     }
+}
 .contact-form{
   grid-column: span 2;
 }

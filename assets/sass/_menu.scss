@@ -4,14 +4,14 @@
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 10;
-  border-bottom:.1rem solid $light-gray-color;
-  h1{
+  z-index: 1;
+  border-bottom: 0.1rem solid $light-gray-color;
+  h1 {
     font-size: 2.3rem;
     color: $primary-color;
     a {
       text-decoration: none;
-      color:inherit;
+      color: inherit;
     }
   }
   ul {
@@ -21,24 +21,23 @@
       a {
         display: block;
         text-decoration: none;
-        color:$primary-color;
+        color: $primary-color;
         font-size: 1.8rem;
         padding: 2rem 2rem;
         position: relative;
-        &::after{
-            content: '';
-            position: absolute;
-            bottom: 1rem;
-            left: 50%;
-            width: 0%;
-            height: 0.2rem;
-            transition: all .3s ease-in-out;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 1rem;
+          left: 50%;
+          width: 0%;
+          height: 0.2rem;
+          transition: all 0.3s ease-in-out;
         }
-        &:hover::after{
-            width: 50%;
-            left: 25%;
-            background-color: $secondary-color;
-
+        &:hover::after {
+          width: 50%;
+          left: 25%;
+          background-color: $secondary-color;
         }
       }
     }
@@ -51,3 +50,53 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.close-menu{
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+    bottom: 0;
+    text-align: center;
+  }
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-content {
+    margin-top: 20vh;
+  }
+
+  .close-menu {
+    display: none;
+    &:checked~.menu{
+      display: block;
+    }
+    &:checked~.close-menu-label::after{
+      content: "×";
+    }
+  }
+  .close-menu-label::after {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      content: "☰";
+      position: fixed;
+      top: 1rem;
+      right: 2rem;
+      z-index: 3;
+      background: $primary-color;
+      color: $white-color;
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 3rem;
+      cursor: pointer;
+      border-radius: .3rem;
+    }
+
+  }
+

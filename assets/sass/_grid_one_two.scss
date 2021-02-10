@@ -37,6 +37,7 @@
     }
   }
 }
+
 .gallery-imagem{
   width: 100%;
   max-width:36rem;
@@ -49,4 +50,20 @@
     }
   }
 
+}
+@media (max-width: 800px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .gallery-imagem{
+    width: 100%;
+    max-width:100%;
+    max-height:100%;
+    img{
+      width: 100%;
+    }
+  }
+  .grid-one-content{
+    display: block;
+  }
 }
